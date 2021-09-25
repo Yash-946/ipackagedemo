@@ -1,6 +1,7 @@
 package i1;
 
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Factorial {
     static BigInteger sum = new BigInteger("1");
@@ -16,6 +17,7 @@ public class Factorial {
     }
     public static void main(String[] args)
     {
-        System.out.println(factorial(3));
+        Scanner s = new Scanner(System.in);
+        System.out.println(factorial(s.nextInt()));
     }
 }
